@@ -1,0 +1,10 @@
+<h1>Ipsums</h1>
+<% @blog_posts.each do |blog_post| %>
+  <h2><%= link_to blog_post.title, blog_post %></h2>
+
+  <%= link_to blog_post do %>
+    <%= image_tag blog_post.photo.url(:small) %>
+  <% end %>
+  <%= simple_format truncate(blog_post.body, length: 300) %>
+
+<% end %>

@@ -1,0 +1,9 @@
+<h1><%= @blog_post.title %></h1>
+<%= image_tag @blog_post.photo.url(:big) %>
+<%= simple_format @blog_post.body %>
+
+<h3>Comments</h3>
+<% @blog_post.comments.each do |comment| %>
+  <h6><%= comment.name %> Said : </h6>
+  <%= comment.message %>
+<% end %>
