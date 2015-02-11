@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -47,3 +48,5 @@ gem 'rails_admin'
 gem 'carrierwave' #allows file upload
 gem 'fog' # allows to store those files on s3
 gem "mini_magick" # make sure you also do "brew install imagemagick"
+
+gem 'rails_12factor'
